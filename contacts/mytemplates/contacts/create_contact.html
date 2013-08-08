@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+{% block title %}Create a New Contact{% endblock %}
+{% block content %}
+
+<form action="" method="post"> {% csrf_token %}
+<ul>
+{{ form.as_table }}
+</ul>
+
+<input type="submit" name="submit" value="Create Contact">
+</form> 
+{% endblock %}
