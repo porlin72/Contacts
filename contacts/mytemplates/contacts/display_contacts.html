@@ -6,6 +6,8 @@
 		<strong><p><a href="/contacts/editcontact/{{ contact.id }}/">
 		{{ contact.first_name }} {{ contact.last_name }}</a></p></strong>
 		<p>{{ contact.number }}</p>
+		<p>{{ contact.address }}</p>
+		<p>{{ contact.city }}, {{ contact.state }} {{ contact.zip_code }}</p>
 		<hr/>
 	{% endfor %}
 	<p><h4>Click on the Contact name to edit the information!</h4></p>
