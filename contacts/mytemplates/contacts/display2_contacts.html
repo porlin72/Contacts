@@ -5,9 +5,12 @@
 		<strong><p><a href="/contacts/editcontact/{{ contact.id }}/">
 		{{ contact.first_name }} {{ contact.last_name }}</a></p></strong>
 		<p>{{ contact.number }}</p>
+		<p>{{ contact.address }}</p>
+		<p>{{ contact.city }}, {{ contact.state }} {{ contact.zip_code }}</p>
 		<p><a href="/contacts/deletecontact/{{ contact.id }}/">Delete</a></p>
 		<hr />
 	{% endfor %}
+	
 	<p>Click<a href="/contacts/mycontacts/"> here</a> to display Contacts.</p>
 	<p>Click<a href="/contacts/create/"> here</a> to create another Contact.</p>
-	{% endblock %}
+{% endblock %}
